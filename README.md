@@ -53,8 +53,8 @@ This project was built as a backend coding assessment and follows all requiremen
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/file-sharing-api.git
-cd file-sharing-api
+git clone https://github.com/mahmed0715/nodejs-file-sharing-api.git
+cd nodejs-file-sharing-api
 ```
 
 ### 2️⃣ Install dependencies
