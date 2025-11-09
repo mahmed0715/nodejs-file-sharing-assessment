@@ -5,10 +5,10 @@ info:
   version: 1.0.0
 
 servers:
-  - url: http://localhost:3000
-    description: Local development server
   - url: https://nodejs-file-sharing-assessment.onrender.com
     description: Deployed server on render.com
+  - url: http://localhost:3000
+    description: Local development server
 
 paths:
   /files:
