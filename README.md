@@ -84,8 +84,9 @@ npm start
 ```
 
 Visit:  
-👉 [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
-👉 [https://nodejs-file-sharing-assessment.onrender.com/api-docs/](Deployed Swagger UI)
+👉 [http://localhost:3000/api-docs] (http://localhost:3000/api-docs)
+
+👉 [https://nodejs-file-sharing-assessment.onrender.com/api-docs/] (Deployed Swagger UI)
 ---
 
 ## 🧠 API Endpoints
