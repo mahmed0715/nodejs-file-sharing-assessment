@@ -1,0 +1,8 @@
+{
+  "projectId": "mock",
+  "bucketName": "mock-bucket",
+  "credentials": {
+    "client_email": "mock@mock.com",
+    "private_key": "MOCK"
+  }
+}

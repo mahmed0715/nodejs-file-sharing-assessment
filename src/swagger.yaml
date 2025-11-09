@@ -1,0 +1,87 @@
+openapi: 3.0.0
+info:
+  title: File Sharing API
+  description: Simple File Sharing Service built with Node.js (upload, download, delete files)
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000
+    description: Local server
+
+paths:
+  /files:
+    post:
+      summary: Upload a new file
+      description: Upload a file using multipart/form-data.
+      tags:
+        - Files
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+                  description: File to upload
+      responses:
+        "200":
+          description: Upload successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  publicKey:
+                    type: string
+                  privateKey:
+                    type: string
+        "400":
+          description: Invalid request
+
+  /files/{publicKey}:
+    get:
+      summary: Download file
+      tags:
+        - Files
+      parameters:
+        - name: publicKey
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Public key of the file
+      responses:
+        "200":
+          description: File stream response
+          content:
+            application/octet-stream: {}
+        "404":
+          description: File not found
+
+  /files/{privateKey}:
+    delete:
+      summary: Delete file
+      tags:
+        - Files
+      parameters:
+        - name: privateKey
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Private key of the file
+      responses:
+        "200":
+          description: File deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+        "404":
+          description: File not found
