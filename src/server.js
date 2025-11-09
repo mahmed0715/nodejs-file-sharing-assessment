@@ -4,7 +4,9 @@ dotenv.config();
 const app = require('./app');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors');
 
+app.use(cors());
 
 // Ensure storage folder exists
 const storageFolder = process.env.FOLDER || path.resolve(__dirname, '..', 'storage_root');

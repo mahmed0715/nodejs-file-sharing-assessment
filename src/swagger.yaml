@@ -7,7 +7,7 @@ info:
 servers:
   - url: http://localhost:3000
     description: Local development server
-  - url: https://file-sharing-api.onrender.com
+  - url: https://nodejs-file-sharing-assessment.onrender.com
     description: Deployed server on render.com
 
 paths:
