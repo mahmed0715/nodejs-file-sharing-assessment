@@ -5,8 +5,8 @@ info:
   version: 1.0.0
 
 servers:
-  - url: http://localhost:3000
-    description: Local server
+  - url: https://file-sharing-api.onrender.com
+    description: Deployed server on render.com
 
 paths:
   /files:
