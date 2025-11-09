@@ -53,8 +53,8 @@ This project was built as a backend coding assessment and follows all requiremen
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/mahmed0715/nodejs-file-sharing-api.git
-cd nodejs-file-sharing-api
+git clone git@github.com:mahmed0715/nodejs-file-sharing-assessment.git
+cd nodejs-file-sharing-assessment
 ```
 
 ### 2️⃣ Install dependencies
@@ -85,7 +85,7 @@ npm start
 
 Visit:  
 👉 [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
-
+👉 [https://nodejs-file-sharing-assessment.onrender.com/api-docs/](Deployed Swagger UI)
 ---
 
 ## 🧠 API Endpoints
